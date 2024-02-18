@@ -196,6 +196,7 @@ nav{
 }
 
 .page2{
+    position: relative;
     min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
@@ -245,6 +246,9 @@ nav{
 
 
 .page2-bottom{
+    /* margin:0 2vw; */
+    position: relative;
+    z-index: 2;
     height: 80vh;
     width: 100%;
     display: flex;
@@ -255,14 +259,19 @@ nav{
 }
 
 .page2-bottom h1{
+    margin-top: 13vw;
+    margin-left: 1vw;
+    padding-left: 2vw;
     font-size: 4vw;
     width: 60%;
-    line-height: 4vw;
+    line-height: 4.5vw;
     /* padding: 4.5vw; */
 }
 
 .bottom-part2{
-    width: 20%;
+    margin-top: 33vw;
+    width: 22%;
+    margin-right: 2vw;
     /* background-color: aqua; */
 }
 .bottom-part2 img{
@@ -272,4 +281,35 @@ border-radius: 15px;
 .bottom-part2 p{
     font-weight: 200;
     margin-top: 2vw;
+}
+
+.page2 .anotherShape{
+    height: 42vw;
+    width: 40vw;
+    position: absolute;
+    border-radius: 50%;
+  background: linear-gradient(to top right,#0c4d28, #129b4e,#2E8B57, #59c789);
+    top: 60%;
+    left: 25%;
+    filter: blur(25px);
+    animation-name: another;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes another {
+    from{
+        transform: translate(10%, -10%) skew(1);
+    }
+    to{
+        transform: translate(-8%, 8%) skew(-12deg);
+    }
+}
+
+.page3{
+    height: 120vh;
+    width: 100%;
+    background-color: #EFEAE3;
 }
