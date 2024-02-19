@@ -405,3 +405,80 @@ min-height: 190vh;
  background-size: cover;   
 }
 
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    position: relative;
+    padding: 0 2vw;
+
+}
+
+
+
+.darkBG{
+    height: 110vh;
+    width: 100%;
+    position: relative;
+    /* top: 3vw; */
+    background-color: #0B0500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    /* padding-bottom: 3vw; */
+ 
+}
+.leftside{
+    width: 45%;
+    height: 100%;
+}
+
+.leftside h1{
+    font-size: 5vw;
+    position: relative;
+    z-index: 3;
+    padding: 0 11vw;
+    color: #EFEAE3;
+    /* top: -6.5vw; */
+    top: 12vw;
+}
+
+.leftside p{
+    font-weight: 200;
+    position: relative;
+    z-index: 3;
+    font-size: 1.2vw;
+    line-height: 1.3vw;
+    padding: 0 11vw;
+    color: #EFEAE3;
+    /* top: -4.5vw; */
+    top: 14vw;
+    width: 47vw;
+    /* opacity: 0.4; */
+   
+}
+
+
+
+.rightside{
+    height: 100%;
+    width: 60%;
+    background-image: url('https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15e1_Project-p-1080.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    transition: ease-in-out 0.7s;
+}
+
+#h102, #h103{
+    color: #504A45;
+}
+
+.page5{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #EFEAE3;
+    
+} 
