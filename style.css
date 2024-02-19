@@ -391,7 +391,7 @@ min-height: 190vh;
 
 .fixed-videos{
     height: 29vw;
-    width: 23vw;
+    width: 35vw;
     background-color: red;
     border-radius: 10px;
     position: fixed;
@@ -399,7 +399,12 @@ min-height: 190vh;
     left: 50%;
     top: 30%;
     display: none;
-    background-size: cover;
+    object-fit: cover;
+    /* object-fit: fill; */
+    /* background-size: contain; */
+    background-position: center;
+    background-repeat: no-repeat;
+ background-size: cover;   
     /* position: absolute; */
     /* position: relative; */
 }
