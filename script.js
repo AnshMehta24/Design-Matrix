@@ -51,33 +51,73 @@ document.addEventListener("DOMContentLoaded" , ()=>{
     let prj2 = document.querySelector('#h102')
     let prj3 = document.querySelector('#h103')
     prj1.addEventListener('click', ()=>{
+        let line = document.querySelector('.innerLine')
         let para1 = document.querySelector('.leftside p')
         para1.innerHTML="Our team works with our clients to refine an idea and concept into an executable design. We create a final design that encompasses the brand narrative to bring stories to life and provide end-to-end design solutions from concept, design, and architectural drawings to 3D renderings."
 
         prj1.style.color = "#EFEAE3"
         prj2.style.color = "#504A45"
         prj3.style.color = "#504A45"
-       
+        line.style.top = '0vw'
         rightimg.style.backgroundImage ='url(https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15e1_Project-p-1080.jpg)'
        
     })
     prj2.addEventListener('click', ()=>{
+        let line = document.querySelector('.innerLine')
         let para2 = document.querySelector('.leftside p')
         para2.innerHTML="Once we have a design, our production team<br> takes the lead in bringing it to life. We manage all<br> stages of the project, from build specifications and<br> technical drawings to site surveys, vendor<br> management, and 2D & 3D production. We have<br> an extensive network of partners to meet each<br> unique design and project need."
         prj2.style.color = "#EFEAE3"
         prj1.style.color = "#504A45"
         prj3.style.color = "#504A45"
+        line.style.top = '5.5vw'
         
        rightimg.style.backgroundImage ='url(https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15d0_Project.webp)'
        
     })
     prj3.addEventListener('click', ()=>{
+        let line = document.querySelector('.innerLine')
         let para = document.querySelector('.leftside p')
         para.innerHTML="We’re with you every step of the way, from the project initiation to launch day. Our production and design teams are onsite to direct and guide the process down to the last point of completion, ensuring success across the built space and experience."
         prj3.style.color = "#EFEAE3"
         prj1.style.color = "#504A45"
         prj2.style.color = "#504A45"
+        line.style.top = '10.8vw'
         rightimg.style.backgroundImage ='url(https://cdn.dribbble.com/users/1121893/screenshots/5555705/dribbble-eline_ye.gif)'
        
     })
+
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        centeredSlides: false,
+        spaceBetween: 20,
+      });
+
+
+      let swiper_container = document.querySelector('.swiper') 
+      let mouse_follower = document.querySelector('.mouse-follower')
+      swiper_container.addEventListener("mouseenter", ()=>{
+        // mouse_follower.style.opacity = 1;
+        // mouse_follower.style.scale = 1;
+        gsap.to(mouse_follower,{
+            scale:1,
+            opacity:1
+        })
+      })
+
+      swiper_container.addEventListener('mouseleave',()=>{
+        gsap.to(mouse_follower,{
+            scale:0,
+            opacity:0
+        })
+      })
+
+      swiper_container.addEventListener('mousemove', (event) => {
+     
+      
+        mouse_follower.style.left = event.clientX - swiper_container.getBoundingClientRect().left + 'px';
+        mouse_follower.style.top = event.clientY - swiper_container.getBoundingClientRect().top+ 'px';
+      });
+
+      
+    
 })

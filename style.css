@@ -17,20 +17,27 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Neu;
-    
+    opacity: 1.01;
 }
 
 html,body{
     height: 100%;
     width: 100%;
-}
 
+}
+#main{
+    opacity: 2  ;
+    /* background-color: #000; */
+    position: relative;
+    z-index: 10;
+}
 .page1{
     min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
     position: relative;
     padding: 0 2vw;
+  
 }
 nav{
     padding: 2vw 0vw;
@@ -201,6 +208,7 @@ nav{
     width: 100%;
     background-color: #EFEAE3;
     padding: 8vw 0;
+  
 }
 
 .moving-txt{
@@ -314,6 +322,7 @@ min-height: 190vh;
     width: 100%;
     background-color: #EFEAE3;
     /* position: relative; */
+    
 }
 
 .element{
@@ -406,12 +415,12 @@ min-height: 190vh;
 }
 
 .page4{
-    min-height: 100vh;
+    min-height: 130vh;
     width: 100%;
     background-color: #EFEAE3;
     position: relative;
     padding: 0 2vw;
-
+   
 }
 
 
@@ -441,7 +450,7 @@ min-height: 190vh;
     padding: 0 11vw;
     color: #EFEAE3;
     /* top: -6.5vw; */
-    top: 12vw;
+    top: 2vw;
 }
 
 .leftside p{
@@ -453,7 +462,7 @@ min-height: 190vh;
     padding: 0 11vw;
     color: #EFEAE3;
     /* top: -4.5vw; */
-    top: 14vw;
+    top: 4vw;
     width: 47vw;
     /* opacity: 0.4; */
    
@@ -476,9 +485,264 @@ min-height: 190vh;
     color: #504A45;
 }
 
+.line{
+    width: 0.2vw;
+    height: 15.7vw;
+    background-color: #504A45;
+    position: relative;
+    top: 18.7vw;
+    left: 8vw;
+    /* padding: 0 1vw;     */
+   
+}
+
+.innerLine{
+    position: absolute;
+    width: 100%;
+    background-color:#00ff6e;
+height: 5vw;
+
+}
+
+
+
 .page5{
     width: 100%;
-    min-height: 100vh;
+    min-height: 85vh;
     background-color: #EFEAE3;
-    
+    padding: 5vw 3vw;
+ position: relative;
+ z-index: 10;
 } 
+
+.tag{
+    /* display: inline-block; */
+    position: relative;
+    top: -5vw;
+    padding: 0vw 1vw;
+}
+
+.tag h1{
+    display: inline-block;
+    font-weight: 200;
+    font-size: 1vw;
+    padding-left: 1vw;
+}
+.circle{
+    display: inline-block;
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: #129b4e;
+    border-radius: 50%;
+}
+.swiper {
+    cursor: none;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+  }
+
+  .swiper:hover .mouse-follower{
+    opacity: 1;
+  }
+
+  .swiper .mouse-follower{
+    padding: 2vw 2vw;
+    position: absolute;
+    transition: opacity 0.1s ease-in-out;
+    /* position: fixed; */
+    background-color: #000;
+    font-size: 2vw;
+    color:#fff;
+    font-weight: 200;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+    z-index: 99;
+  } 
+
+  .swiper-slide {
+    padding: 0 2vw;
+    font-weight: 200;
+    font-size: 18px;
+    /* background: #fff; */
+    width: 30%;
+    border-left: 0.2px solid #0000003c;
+  }
+
+  .swiper-slide .img2 , .img3, .img4, .img5, .img7{
+    width: 5vw;
+    height: 4vw;
+    position: relative;
+    top: -1vw;
+  }
+
+  
+.page6{
+    position: relative;
+    /* position: fixed; */
+    opacity: 1.1;
+   background: transparent;
+    height: 120vh;
+    width: 100%;
+    /* z-index: 0; */
+}
+
+/* #footer{
+    position: fixed;
+    /* position: sticky; */
+    /* z-index: 9;
+    height: 120vh;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end; */
+    /* align-items: flex-end; */
+    /* flex-direction: column;
+    pointer-events: none; */
+/*} */
+#footer {
+    position: fixed;
+    z-index: 9; /* Lower z-index to ensure it's behind other content */
+    height: 120vh;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+#footer h1{
+    padding-left: 0.5vw;
+    font-size: 17vw;
+}
+
+.footer-div{
+    height: 30vh;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+
+    bottom: 8vw;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_left{
+    /* padding: 0 2vw; */
+    height: 100%;
+    width: 25vw;
+    /* background-color: white; */
+}
+
+.footer_right{
+    /* position: relative; */
+    height: 100%;
+    width: 30vw;
+    /* background-color: white; */
+}
+
+.footer_left ul li{
+    color: #fff;
+    text-align: center;
+    line-height: 4vw;
+    font-size: 3vw;
+    font-weight: 600;
+    position: relative;
+    top: 3vw;
+}
+
+.footer_right p{
+    color: #fff;
+    font-size: 1.4vw;
+    font-weight: 200;
+    padding: 0 2vw;
+}
+
+.footer_right h2{
+    width: 53%;
+    position: relative;
+    top: 2vw;
+    font-size: 1.4vw;
+    font-weight: 100;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.313);
+    left: 7.5vw;
+    padding-bottom: 0.5vw;
+}
+
+.heroshapeagain{
+    position: absolute;
+
+    width: 100%;
+    height: 36vw;
+  
+}
+
+.hero1_01{
+    height: 70vh;
+    width: 60%;
+    background:linear-gradient( #2E8B57,  #129b4e);
+    /* background-color: #2E8B57; */
+    border-top-left-radius: 80%;
+    border-bottom-left-radius: 80%;
+    filter: blur(50px);
+    position: absolute;
+    rotate: 11deg;
+    /* transform: skew(100deg); */
+    top: -20vw;
+    right: -15vw;
+    animation-name: anime4;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-in-out  ;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.hero2_02{
+    height: 100%;
+    width: 80%;
+    background:linear-gradient( #2E8B57,  #129b4e);
+    /* background-color: #2E8B57; */
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(50px);
+    position: absolute;
+    rotate: 170deg;
+    left: -7vw;
+    /* transform: skew(-10deg); */
+    top: -30vw;
+    animation-name: anime3;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-in-out  ;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+   
+}
+
+
+@keyframes anime3 {
+    from{
+        transform: translate(5%, 5%);
+    }
+    to{
+        transform: translate(5%, 15%)  skewY(5deg) skewX(5deg);
+    }
+}
+
+@keyframes anime4 {
+    from{
+        transform: translate(5%, -5%);
+    }
+    to{
+        transform: translate(5%,10%)  skewY(20deg) skewX(5deg);
+    }
+}
+
+
+
