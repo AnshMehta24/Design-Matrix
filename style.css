@@ -28,7 +28,7 @@ html,
 body {
     height: 100%;
     width: 100%;
-
+    overflow: hidden;
 }
 
 .loader{
@@ -663,7 +663,7 @@ nav h3 {
     text-align: center;
     justify-content: flex-end;
     align-items: flex-end;
-    overflow: hidden;
+   
 }
 
 
