@@ -1234,7 +1234,7 @@ nav h3 {
     text-align: center;
     justify-content: flex-end;
     align-items: flex-end;
-    overflow: hidden;
+    
 }
 
 .footer-div {
@@ -1334,13 +1334,6 @@ nav h3 {
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-
-}
-#footer h1 {
-    padding-left: 0vw;
-    position: relative;
-    left: -2vw;
-    font-size: 17vw;
 }
     
 
