@@ -1301,6 +1301,7 @@ overflow: hidden;
 }
 
 .hero1_01 {
+    overflow: hidden;
     height: 70vh;
     /* height: 71vh; */
     width: 73%;
@@ -1320,6 +1321,7 @@ overflow: hidden;
 }
 
 .hero2_02 {
+    overflow: hidden;
     height: 100%;
     width: 119%;
     background: linear-gradient(#2E8B57, #129b4e);
