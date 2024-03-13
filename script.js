@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
         prj1.style.color = "#EFEAE3"
         prj2.style.color = "#504A45"
         prj3.style.color = "#504A45"
-        line.style.top = '0vw'
+        line.style.top = '0vh'
         rightimg.style.backgroundImage ='url(https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15e1_Project-p-1080.jpg)'
        
     })
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
         prj2.style.color = "#EFEAE3"
         prj1.style.color = "#504A45"
         prj3.style.color = "#504A45"
-        line.style.top = '5.5vw'
+        line.style.top = '12vh'
         
        rightimg.style.backgroundImage ='url(https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15d0_Project.webp)'
        
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
         prj3.style.color = "#EFEAE3"
         prj1.style.color = "#504A45"
         prj2.style.color = "#504A45"
-        line.style.top = '10.8vw'
+        line.style.top = '23vh'
         rightimg.style.backgroundImage ='url(https://cdn.dribbble.com/users/1121893/screenshots/5555705/dribbble-eline_ye.gif)'
        
     })
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 4,
         centeredSlides: false,
-        spaceBetween: 20,
+        spaceBetween: 20
       });
 
 
@@ -119,5 +119,28 @@ document.addEventListener("DOMContentLoaded" , ()=>{
       });
 
       
+      let menu = document.querySelector('nav h3');
+      let fullScr = document.querySelector('.fullScr');
+      let navh1 = document.querySelector('nav h1');
+      let flag =0;
+
+      menu.addEventListener('click', ()=>{
+        if(flag ===0){
+            flag =1;
+            fullScr.style.top = 0;
+            navh1.style.opacity = 0;
+        }else{
+            flag =0;
+            fullScr.style.top = "-100%"
+            navh1.style.opacity = 1;
+        }
+      })
+      
+      let loader = document.querySelector('.loader')
+
+
+      setTimeout(()=>{
+            loader.style.top ="-100%"        
+      }, 3000)
     
 })
