@@ -655,7 +655,7 @@ nav h3 {
     z-index: 9;
     height: 120vh;
     bottom: 0;
-    width: 95%;
+    width: 100%;
     background-color: #000;
     color: #fff;
     display: flex;
